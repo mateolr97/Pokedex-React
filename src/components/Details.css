@@ -10,7 +10,8 @@
 }
 
 .details__image {
-    height:200px;
+    height:25vw;
+    max-height: 200px;
 }
 
 .details__image > img {

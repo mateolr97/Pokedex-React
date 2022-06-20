@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import './Selection.css'
 import SelectionOption from './SelectionOption'
 import db from './firebase'
+import Views from './Views'
 
 function Selection() {
     const [pokemons, setPokemons] = useState([]);
@@ -31,12 +32,14 @@ function Selection() {
             <div className='selection__options'>
                 {pokemons.map(pokemon => (
                     <SelectionOption key={pokemon.id} id={pokemon.id}
-                    name={pokemon.data.name}/>
+                    name={pokemon.data.name}
+                    image={pokemon.data.image}
+                    type={pokemon.data.type}/>
                 ))}
             </div>   
             <div className='selection__vistas'>
                 <h1>
-                    Vistas
+                    <Views />
                 </h1>
             </div>
         </div>
