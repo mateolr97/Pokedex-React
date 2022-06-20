@@ -1,0 +1,34 @@
+.details {
+    flex: 0.35;
+    background-color: rgb(246, 214, 214);
+    border-radius: 20px;
+}
+
+.details__name {
+    text-align: center;
+    font-size: 14px;
+}
+
+.details__image {
+    height:200px;
+}
+
+.details__image > img {
+    width: auto; 
+    max-height: 100%; 
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.details__info {
+    padding: 10px;
+    font-size: 10px;
+    text-align:center;
+
+}
+
+.details__info > h2 {
+    margin-bottom: 40px;
+}
