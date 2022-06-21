@@ -1,7 +1,9 @@
 .details {
     flex: 0.35;
+    min-width: 35%;
     background-color: rgb(246, 214, 214);
     border-radius: 20px;
+    overflow: auto;
 }
 
 .details__name {
@@ -27,7 +29,6 @@
     padding: 10px;
     font-size: 10px;
     text-align:center;
-
 }
 
 .details__info > h2 {

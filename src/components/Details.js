@@ -77,6 +77,7 @@ function Details() {
             ))
         }
     }, [pokemonId])
+    if(pokemonId){
 
     return (
         <div className='details'>
@@ -109,11 +110,8 @@ function Details() {
                     Peso: {PokemonWeight}
                 </h2>
             </div>
-            <div className='details__evolutions'>
-
-            </div>
         </div>
-    )
+    )}
 }
 
 export default Details

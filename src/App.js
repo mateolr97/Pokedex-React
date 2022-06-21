@@ -3,6 +3,7 @@ import Selection from './components/Selection.js'
 import Details from './components/Details.js'
 import SelectionList from './components/SelectionList.js'
 import SelectionTable from './components/SelectionTable.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {

@@ -21,7 +21,7 @@
 .selection__options {
     display: flex;
     background-color: rgb(255, 230, 230);
-    overflow: scroll;
+    overflow: auto;
     border-radius: 20px;
     max-width: relative;
     flex-wrap: wrap;

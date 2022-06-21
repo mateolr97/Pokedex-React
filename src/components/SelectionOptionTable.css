@@ -1,6 +1,4 @@
 .selectionTable__option {
-    display: flex;
-    padding: 20px;
     cursor: pointer;
 }
 
@@ -12,8 +10,4 @@ a {
 .selectionTable__info > h3 {
     font-size: 16px;
     margin-bottom: 8px;
-}
-
-.selectionTable__info{
-    margin-left: 15px;
 }
