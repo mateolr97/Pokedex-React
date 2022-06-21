@@ -1,16 +1,17 @@
-.selection {
+.selectionTable {
     display: flex;
     flex-direction: column;
     flex: 0.65;
+    overflow: scroll;
 }
 
-.selection__header {
+.selectionTable__header {
     display: flex;
     padding: 10px;
     height: 80px;
 }
 
-.selection__header > img {
+.selectionTable__header > img {
     width: auto; 
     max-height: 100%; 
     border-radius: 10px;
@@ -18,11 +19,19 @@
     margin-right: auto;
 }
 
-.selection__options {
+th {
+    font-size: larger;
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+}
+
+.tableItem{
     display: flex;
-    background-color: rgb(255, 230, 230);
-    overflow: scroll;
-    border-radius: 20px;
-    max-width: relative;
-    flex-wrap: wrap;
+}
+
+.table{
+    width: 65%;
 }

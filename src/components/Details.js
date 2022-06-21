@@ -11,6 +11,8 @@ function Details() {
     const [PokemonAbility1, setPokemonAbility1] = useState("");
     const [PokemonAbility2, setPokemonAbility2] = useState("");
     const [PokemonImage, setPokemonImage] = useState("");
+    const [PokemonHeight, setPokemonHeight] = useState("");
+    const [PokemonWeight, setPokemonWeight] = useState("");
 
     useEffect(() => {
         if (pokemonId){
@@ -60,6 +62,22 @@ function Details() {
         }
     }, [pokemonId])
 
+    useEffect(() => {
+        if (pokemonId){
+            db.collection('pokemons').doc(pokemonId).onSnapshot(snapshot =>
+                (setPokemonHeight(snapshot.data().height)
+            ))
+        }
+    }, [pokemonId])
+    
+    useEffect(() => {
+        if (pokemonId){
+            db.collection('pokemons').doc(pokemonId).onSnapshot(snapshot =>
+                (setPokemonWeight(snapshot.data().weight)
+            ))
+        }
+    }, [pokemonId])
+
     return (
         <div className='details'>
             <div className='details__name'>
@@ -83,6 +101,12 @@ function Details() {
                     {","}
                     {"\n"}
                     {PokemonAbility2}
+                </h2>
+                <h2>
+                    Altura: {PokemonHeight}
+                </h2>
+                <h2>
+                    Peso: {PokemonWeight}
                 </h2>
             </div>
             <div className='details__evolutions'>

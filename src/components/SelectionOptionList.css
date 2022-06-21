@@ -1,0 +1,28 @@
+.selectionOptionList__option {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.selectionOptionList__avatar {
+    margin-top: 10px;
+}
+
+.selectionOptionList__option:hover {
+    background-color: #ffd2d2;
+}
+
+.selectionOptionList__info > h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.selectionOptionList__info{
+    margin-left: 15px;
+}

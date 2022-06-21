@@ -1,0 +1,21 @@
+.viewSelection__option {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.viewSelection {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.viewSelection__option:hover {
+    background-color: #ffd2d2;
+}
+
+.viewSelection__option > h3 {
+    font-size: large;
+}

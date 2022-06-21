@@ -1,7 +1,8 @@
 import './App.css';
 import Selection from './components/Selection.js'
 import Details from './components/Details.js'
-import Views from './components/Views.js'
+import SelectionList from './components/SelectionList.js'
+import SelectionTable from './components/SelectionTable.js'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,6 +11,15 @@ function App() {
      <div className='app__body'>
       <Router>
         <Routes>
+        <Route path="/table" element={<> 
+            <SelectionTable/>
+            <Details />
+          </>}/>
+
+          <Route path="/list" element={<> 
+            <SelectionList />
+            <Details />
+          </>}/>
 
           <Route path="/" element={<> 
             <Selection />
@@ -18,6 +28,16 @@ function App() {
           
           <Route path="/pokemons/:pokemonId" element={<> 
             <Selection />
+            <Details />
+          </>}/>
+          
+          <Route path="list/pokemons/:pokemonId" element={<> 
+            <SelectionList />
+            <Details />
+          </>}/>
+          
+          <Route path="table/pokemons/:pokemonId" element={<> 
+            <SelectionTable/>
             <Details />
           </>}/>
 
