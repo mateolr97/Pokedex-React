@@ -1,4 +1,4 @@
-.app {
+/* .app {
   display: grid;
   place-items: center;
   background-color: #dadbd3;
@@ -13,5 +13,10 @@
   width: 90vw;
   height: 90vh;
   box-shadow:  -1px 4px 20px -6px rgba(0,0,0,0.2);
+  border-radius: 20px;
+} */
+
+.app{
+  background-color: #ebb9b9;
   border-radius: 20px;
 }

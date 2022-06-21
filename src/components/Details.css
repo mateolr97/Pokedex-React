@@ -1,9 +1,11 @@
 .details {
-    flex: 0.35;
-    min-width: 35%;
     background-color: rgb(246, 214, 214);
     border-radius: 20px;
+    max-height: 88vh;
+    max-width: 100%;
     overflow: auto;
+    margin-top: 10vh;
+    margin-left: 7vh;
 }
 
 .details__name {

@@ -1,7 +1,8 @@
 .selection {
     display: flex;
     flex-direction: column;
-    flex: 0.65;
+    max-height: 96vh;
+    margin-left: 7vw;
 }
 
 .selection__header {
