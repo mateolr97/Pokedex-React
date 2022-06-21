@@ -1,11 +1,11 @@
 .details {
     background-color: rgb(246, 214, 214);
     border-radius: 20px;
-    max-height: 88vh;
+    height: 88vh;
+    width: 85vw;
     max-width: 100%;
     overflow: auto;
-    margin-top: 10vh;
-    margin-left: 7vh;
+    margin-top: 5vh;
 }
 
 .details__name {

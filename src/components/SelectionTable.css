@@ -1,10 +1,10 @@
 th {
     font-size:x-large;
-    border: 1px solid black;
+    border: 1px solid black !important;
 }
 
 td {
-    border: 1px solid black;
+    border: 1px solid black !important;
 }
 
 .table {
